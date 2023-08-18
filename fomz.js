@@ -1,6 +1,15 @@
 /******************************
 
 脚本功能：日杂相机——解锁VIP
+下载地址：https://is.gd/ncRChK
+软件版本：1.3.2
+脚本作者：彭于晏💞
+更新时间：2022-12-15
+问题反馈：QQ+89996462
+QQ会员群：779392027💞
+TG反馈群：https://t.me/plus8889
+TG频道群：https://t.me/py996
+使用声明：此脚本仅供学习与交流，请勿转载与贩卖！⚠️⚠️⚠️
 
 *******************************
 
@@ -19,15 +28,9 @@
 hostname = rzres86api.imendon.com,rzres86api.imendon.com,api-access.pangolin-sdk-toutiao.com
 
 
-// var youxiu = JSON.parse($response.body);youxiu.data.isValid = 1;youxiu.data.expiredTs = 4102415999;$done({body : JSON.stringify(youxiu)});
-// var youxiu ='{"code":1,"msg":"ok","data":{"isValid":1,"expiredTs":4102415999}}';$done(JSON.stringify(youxiu));
-
-// body = $response.body.replace(/\"isValid":\d+/g, '\"isValid":1')
-// body = $response.body.replace(/\"expiredTs":\d+/g, '\"expiredTs":4102415999')
-// $done({body});
 
 *******************************/
 
 body = $response.body.replace(/\"isValid":\d+/g, '\"isValid":1')
-body = $response.body.replace(/\"expiredTs":\d+/g, '\"expiredTs":4102415999')
+
 $done({body});
