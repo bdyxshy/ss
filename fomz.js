@@ -5,5 +5,5 @@
 *******************************/
 
 body = $response.body.replace(/\"isValid":\d+/g, '\"isValid":1')
-body = $response.body.replace(/\"expiredTs":\d+/g, '\"expiredTs":4102415999')
+body = body.replace(/\"expiredTs":\d+/g, '\"expiredTs":4102415999')
 $done({body});
